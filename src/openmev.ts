@@ -1,3 +1,19 @@
+/**
+Copyright 2021 CommodityStream LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
 import {
   BlockTag,
   TransactionReceipt,
@@ -8,7 +24,7 @@ import { Signer } from '@ethersproject/abstract-signer';
 import { Networkish } from '@ethersproject/networks';
 
 import { ConnectionInfo, fetchJson } from '@ethersproject/web';
-// import { BigNumber, ethers, providers, Signer } from 'ethers'
+
 import { keccak256 } from '@ethersproject/keccak256';
 import * as providers from '@ethersproject/providers';
 import { Provider, BaseProvider } from '@ethersproject/providers';
@@ -24,12 +40,16 @@ export function id(text: string): string {
   return keccak256(toUtf8Bytes(text));
 }
 
-export const DEFAULT_FLASHBOTS_ENDPOINT = 'https://relay.flashbots.net';
-export const DEFAULT_ETHERMINE_ENDPOINT = 'https://mev-relay.ethermine.org/';
+export const DEFAULT_FLASHBOTS_ENDPOINT = 
+    'https://relay.flashbots.net';
+export const DEFAULT_ETHERMINE_ENDPOINT = 
+    'https://mev-relay.ethermine.org/';
 export const DEFAULT_TAICHI_ENDPOINT =
-  'https://api-us.taichi.network:10001/rpc/private';
+    'https://api-us.taichi.network:10001/rpc/private';
 export const DEFAULT_OPENMEV_ENDPOINT_PROVIDER =
-  'https://api.openmev.net:10001/v1/public/provider';
+    'https://api.openmev.net:10001/v1/public/provider';
+
+
 
 export enum SystemConfigId {
   CONFIG_MINER_RELAY = 0,
