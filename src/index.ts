@@ -1,3 +1,2 @@
-import * from './lib'
-
-export = OpenMevEthersProvider
+import * as OpenMevProvider from './openmev';
+export = OpenMevProvider;
