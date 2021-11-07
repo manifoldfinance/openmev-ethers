@@ -42,8 +42,6 @@ export function id(text: string): string {
 
 export const DEFAULT_FLASHBOTS_ENDPOINT = 'https://relay.flashbots.net';
 export const DEFAULT_ETHERMINE_ENDPOINT = 'https://mev-relay.ethermine.org/';
-export const DEFAULT_TAICHI_ENDPOINT =
-  'https://api-us.taichi.network:10001/rpc/private';
 export const DEFAULT_OPENMEV_ENDPOINT_PROVIDER =
   'https://api.openmev.net:10001/v1/public/provider';
 
