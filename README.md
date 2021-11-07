@@ -1,4 +1,6 @@
-# @OpenMev/ethers-provider
+# @openmev/ethers-provider
+
+
 
 This repository contains the `OpenMevBundleProvider` EthersJS provider, an
 additional `Provider` to `ethers.js` to enable high-level access to
@@ -17,7 +19,7 @@ status.
 One key feature this library provides is **payload signing**, a requirement to
 submit OpenMEV bundles to the `mev-relay` service. This library takes care of
 the signing process via the `authSigner` passed into the constructor.
-[Read more about relay signatures here via Flashbots](https://github.com/flashbots/mev-relay-js#authentication)
+[Read more about relay signatures via Flashbots](https://github.com/flashbots/mev-relay-js#authentication)
 
 This library is not a fully functional ethers.js implementation, just a simple
 provider class, designed to interact with an existing
@@ -277,3 +279,7 @@ const OpenMevProvider = await OpenMevBundleProvider.create(
   'goerli',
 );
 ```
+
+## License 
+
+Apache-2.0
