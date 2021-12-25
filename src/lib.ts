@@ -554,4 +554,3 @@ export class FlashbotsBundleProvider extends providers.JsonRpcProvider {
     }
   }
 }
->>>>>>> 88a7ddb71c63135f62e5221b24315bec1f72c2ad

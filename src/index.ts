@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 import * as OpenMevProvider from './openmev';
-export = OpenMevProvider;
+export default OpenMevProvider;
